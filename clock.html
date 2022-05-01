@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Automatic clock Web App</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./clock.css" />
+</head>
+<title>Amazing Weather Web App</title>
+
+<body>
+    <!-- This box is for the desktop View with specified Css and functions -->
+    <div id="wide-range" class="wide-box">
+        <div id="automatic-logo" class="logo-box"></div>
+
+        <div class="welcome-box" id="welcome"></div>
+        <div id="duration" class="timer" onload="correctDur()"></div>
+        <div class="time-belt">
+            <p>
+                Clock with changing time, day,<br /> image(as per day-time) and small<br /> symbol of day and night :)
+            </p>
+        </div>
+        <button class="button-design" data-toggle="dropdown" data-target="#">
+        More
+      </button>
+    </div>
+    <!-- This box is for Mobile and Tab view with specified Css and functions -->
+    <div class="container" id="main-box">
+        <div id="greet" class="greetings-box"></div>
+        <div id="clock" class="time-box" onload="currentTime()"></div>
+        <div class="time-zone" id="zone">IST</div>
+        <div class="about-clock">
+            <p>
+                Clock with changing time, day, image(as per day-time) and small symbol of day and night :)
+            </p>
+        </div>
+        <div class="second-main-box">
+            <div id="day-box" class="get-day"></div>
+
+            <div class="sybol" id="symbol"></div>
+        </div>
+
+        <script src="./clock.js" async defer></script>
+    </div>
+</body>
+
+</html>
